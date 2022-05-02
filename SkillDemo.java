@@ -18,7 +18,7 @@ public class SkillDemo {
                 int closeParen = words.indexOf(")", openParen);
 
                 finalList.add(words.substring(openParen + 1, closeParen));
-                currIndex += 1;
+                currIndex = openParen + 1; 
             }
             else{
                 currIndex += 1;
